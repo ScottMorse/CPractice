@@ -9,7 +9,7 @@
 //error codes
 #define MAP_MISSING -3
 #define MAP_FULL -2
-#define MAP_OEM -1
+#define MAP_OMEM -1
 #define MAP_OKAY 0
 
 // any type
@@ -26,7 +26,7 @@ extern HashMap new_hashmap();
 // use callback f on hashmap, should return MAP_OKAY or terminate iteration
 extern int hashmap_iterate(HashMap in, PFany f, any value);
 
-// standard map put (MAP_OKAY, MAP_MISSING, MAP_OEM)
+// standard map put (MAP_OKAY, MAP_MISSING, MAP_OMEM)
 extern int hashmap_put(HashMap in, char* key, any value);
 
 // get value from key (MAP_OKAY, MAP_MISSING)
